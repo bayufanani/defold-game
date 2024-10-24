@@ -1,0 +1,212 @@
+script: "/main/splash/splash.gui_script"
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+fonts {
+  name: "main_default"
+  font: "/main/main_default.font"
+}
+textures {
+  name: "splash"
+  texture: "/main/splash/splash.atlas"
+}
+textures {
+  name: "main_assets"
+  texture: "/main/main_assets.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "splash/bg"
+  id: "bg"
+  pivot: PIVOT_SW
+  layer: "bg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 467.0
+    y: 481.0
+  }
+  size {
+    x: 500.0
+    y: 200.0
+  }
+  type: TYPE_BOX
+  texture: "main_assets/kayu"
+  id: "header"
+  layer: "objects"
+  inherit_alpha: true
+  slice9 {
+    x: 35.0
+    y: 25.0
+    z: 40.0
+    w: 25.0
+  }
+}
+nodes {
+  position {
+    y: 2.0
+  }
+  scale {
+    x: 0.79488
+    y: 0.79488
+    z: 0.79488
+  }
+  type: TYPE_BOX
+  texture: "splash/title"
+  id: "box"
+  parent: "header"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 344.0
+    y: 253.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+    z: 0.7
+  }
+  size {
+    x: 350.0
+    y: 171.0
+  }
+  type: TYPE_BOX
+  texture: "main_assets/btn_red"
+  id: "btn_materi"
+  layer: "objects"
+  inherit_alpha: true
+  slice9 {
+    x: 90.0
+    z: 90.0
+  }
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "MATERI"
+  font: "main_default"
+  id: "text"
+  parent: "btn_materi"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 344.0
+    y: 134.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  size {
+    x: 350.0
+    y: 171.0
+  }
+  type: TYPE_BOX
+  texture: "main_assets/btn green"
+  id: "btn_permainan"
+  layer: "objects"
+  inherit_alpha: true
+  slice9 {
+    x: 90.0
+    z: 90.0
+  }
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "PERMAINAN"
+  font: "main_default"
+  id: "text1"
+  parent: "btn_permainan"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 586.0
+    y: 253.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  size {
+    x: 350.0
+    y: 171.0
+  }
+  type: TYPE_BOX
+  texture: "main_assets/btn blue"
+  id: "btn_video"
+  layer: "objects"
+  inherit_alpha: true
+  slice9 {
+    x: 90.0
+    z: 90.0
+  }
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "VIDEO"
+  font: "main_default"
+  id: "text2"
+  parent: "btn_video"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 586.0
+    y: 134.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  size {
+    x: 350.0
+    y: 171.0
+  }
+  type: TYPE_BOX
+  texture: "main_assets/btn orange"
+  id: "btn_referensi"
+  layer: "objects"
+  inherit_alpha: true
+  slice9 {
+    x: 90.0
+    z: 90.0
+  }
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "REFERENSI"
+  font: "main_default"
+  id: "text3"
+  parent: "btn_referensi"
+  inherit_alpha: true
+}
+layers {
+  name: "bg"
+}
+layers {
+  name: "objects"
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

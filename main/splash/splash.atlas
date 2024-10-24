@@ -1,0 +1,15 @@
+animations {
+  id: "bg"
+  images {
+    image: "/assets/images/bg.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "title"
+  images {
+    image: "/assets/images/title.png"
+  }
+  playback: PLAYBACK_NONE
+}
+extrude_borders: 2

@@ -1,0 +1,64 @@
+animations {
+  id: "kayu"
+  images {
+    image: "/assets/images/kayu.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn_red"
+  images {
+    image: "/assets/images/red btn.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn green"
+  images {
+    image: "/assets/images/green btn.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn blue"
+  images {
+    image: "/assets/images/blue btn.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn orange"
+  images {
+    image: "/assets/images/orange btn.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn_red_pressed"
+  images {
+    image: "/assets/images/red btn pressed.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn green pressed"
+  images {
+    image: "/assets/images/green btn pressed.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn blue pressed"
+  images {
+    image: "/assets/images/blue btn pressed.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "btn orange pressed"
+  images {
+    image: "/assets/images/orange btn pressed.png"
+  }
+  playback: PLAYBACK_NONE
+}
+extrude_borders: 2

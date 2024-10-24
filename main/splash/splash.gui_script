@@ -1,0 +1,41 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	self.btn_materi = gui.get_node("btn_materi")
+	self.btn_video = gui.get_node("btn_video")
+	self.btn_permainan = gui.get_node("btn_permainan")
+	self.btn_referensi = gui.get_node("btn_referensi")
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Learn more: https://defold.com/manuals/message-passing/
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	if action_id == nil then
+		if gui.pick_node(self.btn_materi, action.x, action.y) then
+			gui.play_flipbook(self.btn_materi, 'btn_red_pressed')
+		else
+			gui.play_flipbook(self.btn_materi, 'btn_red')
+		end
+
+		if gui.pick_node(self.btn_video, action.x, action.y) then
+			gui.play_flipbook(self.btn_video, 'btn blue pressed')
+		else
+			gui.play_flipbook(self.btn_video, 'btn blue')
+		end
+
+		if gui.pick_node(self.btn_permainan, action.x, action.y) then
+			gui.play_flipbook(self.btn_permainan, 'btn green pressed')
+		else
+			gui.play_flipbook(self.btn_permainan, 'btn green')
+		end
+
+		if gui.pick_node(self.btn_referensi, action.x, action.y) then
+			gui.play_flipbook(self.btn_referensi, 'btn orange pressed')
+		else
+			gui.play_flipbook(self.btn_referensi, 'btn orange')
+		end
+	end
+end
